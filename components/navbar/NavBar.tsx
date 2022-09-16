@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import styles from "./NavBar.module.scss";
 
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineCloseSquare } from "react-icons/ai";
+import Link from "next/link";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,9 +20,9 @@ const Header = () => {
           <nav
             className={`${styles.nav} ${menuOpen ? styles[`nav--open`] : {}}`}
           >
-            <a className={styles.nav__item} href={"/"}>
-              Page One
-            </a>
+            <Link href={"/impressum"}>
+              <a className={styles.nav__item}>Impressum</a>
+            </Link>
             <a className={styles.nav__item} href={"/"}>
               Page Two
             </a>
