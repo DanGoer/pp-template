@@ -11,6 +11,7 @@ function Hero() {
           find in the entire Web! We provide YOU with the best available service
           one can get. Stay and learn more about this services.
         </p>
+        <button>Discover More</button>
       </section>
     </>
   );
