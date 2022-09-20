@@ -1,3 +1,5 @@
+@import "../../styles/variables.scss";
+
 .hero {
   width: 100%;
   height: calc(100vh - 2.5em);
@@ -5,4 +7,46 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  h1 {
+    font-size: 3.5em;
+    color: $textprimar;
+  }
+
+  h2 {
+    font-size: 2.5em;
+    color: $textsekundar;
+    animation-delay: 0.5s;
+    opacity: 0;
+  }
+
+  p {
+    font-size: 1.5em;
+    color: $textsekundar;
+    max-width: 20em;
+    animation-delay: 1s;
+    opacity: 0;
+  }
+
+  h1,
+  h2,
+  p {
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
