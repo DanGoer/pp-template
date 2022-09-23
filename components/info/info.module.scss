@@ -1,5 +1,30 @@
 .info {
-  background-color: red;
+  &__bg {
+    width: 100%;
+    height: calc(100vh - 2.5em);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__info-0 {
+    background-image: url("../../public/frontend.png");
+
+    background-position: 60% 50%;
+  }
+
+  &__info-1 {
+    background-image: url("../../public/backend.png");
+  }
+
+  &__info-2 {
+    background-image: url("../../public/devops.jpg");
+    background-position: 75% 50%;
+  }
+
+  &__info-3 {
+    background-image: url("../../public/design.jpg");
+    background-position: center;
+  }
 }
 
 .test {
