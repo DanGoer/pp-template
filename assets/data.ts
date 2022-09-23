@@ -16,3 +16,10 @@ export const infoData = [
     p: "3We provide you with FrontEnd service of all kind! For that we use the finest technologie used in modern industries!",
   },
 ];
+
+export const infoButton = [
+  { button: "FrontEnd" },
+  { button: "BackEnd" },
+  { button: "DevOps" },
+  { button: "Design" },
+];

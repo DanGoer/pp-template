@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { infoData } from "../../assets/data";
+import { infoData, infoButton } from "../../assets/data";
 import styles from "./info.module.scss";
 
 function Info() {
@@ -9,7 +9,15 @@ function Info() {
     <section className={styles.info}>
       <h1>{infoData[activeInfo].h1}</h1>
       <p>{infoData[activeInfo].p}</p>
-      <button onClick={() => setActiveInfo(2)}>test</button>
+      <div>
+        {infoButton.map((button, index) => {
+          return (
+            <button key={button.button} onClick={() => setActiveInfo(index)}>
+              {button.button}
+            </button>
+          );
+        })}
+      </div>
     </section>
   );
 }
